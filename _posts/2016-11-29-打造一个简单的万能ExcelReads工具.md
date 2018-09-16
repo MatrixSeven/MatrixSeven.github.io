@@ -36,7 +36,7 @@ categories: 造轮子
 ## 4.继承关系
 基本上累的继承关系不会有太大变动，但是不保证后期结构
 
-![ExcelReadshua](/imgage/posts/打造一个简单的万能ExcelReads工具/关系.png)
+![ExcelReadshua](/images/posts/打造一个简单的万能ExcelReads工具/关系.png)
 
 ## 5.读取例子
 ```java
@@ -75,9 +75,9 @@ Map<String,Seven> map=new ResWrapperObj(Seven) {
                 o.get("创建人").length() > 4).<Map>CreateMap("创建人"));
 ```
  ## 其他截图
-![ExcelReadshua](/imgage/posts/打造一个简单的万能ExcelReads工具/效果.png)
+![ExcelReadshua](/images/posts/打造一个简单的万能ExcelReads工具/效果.png)
 ## 实体类截图
-![ExcelReadshua](/imgage/posts/打造一个简单的万能ExcelReads工具/实体类.png)
+![ExcelReadshua](/images/posts/打造一个简单的万能ExcelReads工具/实体类.png)
 
 
 # 欢迎大家集思广益，多提建议，一起完成

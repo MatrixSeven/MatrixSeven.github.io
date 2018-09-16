@@ -51,9 +51,9 @@ Kotlin写DSL,真是在好用了.大家可以尝试下
 
 ### 7. 实际效果
 1. 配置页面
-![配置页面](/imgage/posts/MacacaUIFinder元素查找器/2.png)
+![配置页面](/images/posts/MacacaUIFinder元素查找器/2.png)
 2. 执行页面
-![执行页面](/imgage/posts/MacacaUIFinder元素查找器/1.png)
+![执行页面](/images/posts/MacacaUIFinder元素查找器/1.png)
 
 ### 8. 提示
 1. 软件可能有未知bug.
