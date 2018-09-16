@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://blog.52python.cn
+url: http://blog.52python.cn
 date_format: "ordinal"
 title: Accelerator
 subtitle: "我无法改变世界..."
