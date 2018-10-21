@@ -6,7 +6,7 @@ title: JDK动态代理的invoke方法的第一个参数是什么
 # comments: true
 keywords: java,动态代理
 description: java,动态代理
-categories: [java]
+categories: [Java]
 ---
 **本文由博主原创,转载请注明出处**
 在知乎回答的一个问题,不过跑题了,但是还是有些价值的,搬到博客,原文链接

@@ -2,7 +2,7 @@
 title: httpclient https报错unrecognized_name
 date: 2017-07-27 14:59:21
 tags: [https,httpclient,ssl]
-categories: java
+categories: Java
 ---
  ## 0x10 突然出现的 unrecognized_name
  今天在使用`httpclient`([Apache HttpComponents](http://hc.apache.org/))访问https时候突然出现了一个戳手不及的错误
