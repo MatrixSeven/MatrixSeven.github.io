@@ -1,0 +1,14 @@
+---
+title: Docker-Compose的初见
+toc: true
+comments: true
+date: 2018-10-21 12:57:11
+tags: [clojure]
+categories: Clojue学习
+---
+### 嗯?
+之前一直只是简单的使用Docker,并未使用docker真正的搞过系统化的东西,所以对于docker的使用也仅限于docker pull/start/run等等程度,但是前几天遇到了`dokcer-compose`,觉得有必要了解下正常的docker玩法了.
+
+### dokcer-compose
+1. docker-compose 是什么    
+那么这个玩意是什么呢?其实简单理解下,这个玩意就是一个统一管理docker容器的东西,你可以自直接控制几个docker容器之间的相互依赖关系,然后直接快速部署,把一以前手动的启动一个一个docker容器,配置程序正常运行的环境统一打包成一个`脚本`,免去了很多麻烦,实现了自动化整体部署.
