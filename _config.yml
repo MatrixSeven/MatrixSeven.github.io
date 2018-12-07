@@ -101,11 +101,11 @@ disqus:
 #         client_id: 833bda0353417cc694b0
 #         client_secret: 8a3e24a7889cfb4cdf4382ccc81237f6d2885e9d
 # https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: matrixseven
-    repo: blog-comments
-    clientID: 833bda0353417cc694b0
-    clientSecret: 8a3e24a7889cfb4cdf4382ccc81237f6d2885e9d
+# gitalk:
+#     owner: matrixseven
+#     repo: blog-comments
+#     clientID: 833bda0353417cc694b0
+#     clientSecret: 8a3e24a7889cfb4cdf4382ccc81237f6d2885e9d
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
