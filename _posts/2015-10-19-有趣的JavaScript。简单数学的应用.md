@@ -18,25 +18,29 @@ categories: JavaScript
 首先说，我们要实现的效果，就是判断鼠标进入和离开元素/元素的方向。
 首先，一个普通人的想法应该是找到元素的边框坐标，然后进行判断。但是google到的这个JavaScript，仅仅用了一个高中数学小技巧及完美搞定了，而且给人一种高达上的感觉。
 看JavaScript代码…
+
 ```javascript
 $("#wrap").bind("mouseenter mouseleave",function(e) {
-          var w = $(this).width();
-          var h = $(this).height();
-          var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
-          var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
-          var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4; //direction的值为“0,1,2,3”分别对应着“上，右，下，左”
-          var eventType = e.type;
-          var dirName = new Array('上方','右侧','下方','左侧');
-          if(e.type == 'mouseenter'){
-             $("#result").html(dirName[direction]+'进入');
-         }else{
-             $('#result').html(dirName[direction]+'离开');
-         }
-     });
-````
+        var w = $(this).width();
+        var h = $(this).height();
+        var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+        var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+        var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4; //direction的值为“0,1,2,3”分别对应着“上，右，下，左”
+        var eventType = e.type;
+        var dirName = new Array('上方','右侧','下方','左侧');
+        if(e.type == 'mouseenter'){
+            $("#result").html(dirName[direction]+'进入');
+        }else{
+            $('#result').html(dirName[direction]+'离开');
+        }
+    });
+```
+
 对，就是这个公式：<br>
-```javascript
+
+```JavaScript
 var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+
 ```
 实现了方向的判断.<br>
 这真是一个巧妙的写法。<br>
