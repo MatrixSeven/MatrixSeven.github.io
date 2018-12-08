@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: 我无法改变世界
+description: Accelerator
 keywords: Seven
 comments: true
 menu: 关于
