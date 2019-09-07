@@ -1,0 +1,52 @@
+---
+title: Linux/Mac下DD命令烧录镜像
+toc: true
+comments: true
+date: 2019-9-6
+tags: [linux,dd,镜像]
+categories: Linux学习
+---
+
+## Linux/Mac下DD命令烧录镜像
+
+由于最近工作环境完全切入到了linux环境,作为备忘录,记录一些常用命令
+###  1. fdisk查看
+插入U盘,然后使用`fdisk -l`查看下
+```bash
+Device       Start       End   Sectors   Size Type
+/dev/sda1     2048   1050623   1048576   512M EFI System
+/dev/sda2  1050624 468860927 467810304 223.1G Linux filesystem
+
+
+Disk /dev/sdb: 14.4 GiB, 15502147584 bytes, 30277632 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000000
+
+Device     Boot   Start     End Sectors Size Id Type
+/dev/sdb1  *         64 4141523 4141460   2G  0 Empty
+/dev/sdb2       4141524 4149715    8192   4M ef EFI (FAT-12/16/32)
+```
+
+### 2. 格式化(可选)
+如果要格式化一下要先卸载
+执行`sudo umount /dev/sdb*`卸载掉U盘
+然后`sudo mkfs.vfat /dev/sdb -I`  
+
+### 3. DD烧录
+执行
+```bash
+sudo dd if=./Downloads/manjaro-i3-18.0.4-stable-x86_64.iso of=/dev/sdb bs=4M 
+```
+iso和U盘路径自己替换下
+
+### 4. 监控(附加)
+在另一个终端执行
+```
+sudo watch kill -USR1 $(pgrep ^dd)
+```
+可以看到烧录进度
+
+Niec

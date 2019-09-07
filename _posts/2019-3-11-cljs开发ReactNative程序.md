@@ -4,7 +4,7 @@ toc: true
 comments: true
 date: 2019-3-11
 tags: [clj,cljs,clojureScript,ReactNative,app]
-categories: Clojue学习
+categories: Clojure学习
 ---
 
 ## 使用cljs开发RN App

@@ -4,7 +4,7 @@ toc: true
 comments: true
 date: 2018-10-21 12:57:11
 tags: [clojure]
-categories: Clojue学习
+categories: Clojure学习
 ---
 ### 嗯?
 之前一直只是简单的使用Docker,并未使用docker真正的搞过系统化的东西,所以对于docker的使用也仅限于docker pull/start/run等等程度,但是前几天遇到了`dokcer-compose`,觉得有必要了解下正常的docker玩法了.
